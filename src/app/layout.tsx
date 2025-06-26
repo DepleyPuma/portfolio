@@ -1,12 +1,17 @@
-'use client';
 import './globals.css';
-import SmoothScrollProvider from './components/SmoothScrollProvider';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
+import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const locale = await getLocale();
+
 	return (
-		<html lang='pl' suppressHydrationWarning>
+		<html lang={locale} suppressHydrationWarning>
 			<body>
-				<SmoothScrollProvider>{children}</SmoothScrollProvider>
+				<NextIntlClientProvider>
+					<SmoothScrollProvider>{children}</SmoothScrollProvider>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

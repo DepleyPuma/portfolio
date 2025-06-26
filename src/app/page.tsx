@@ -1,5 +1,5 @@
 import { HeroSection } from '@/view/HeroSection';
-import { DockDemo } from '@/app/components/Navigation';
+import { DockDemo } from '@/components/Navigation';
 
 export default function Home() {
 	return (

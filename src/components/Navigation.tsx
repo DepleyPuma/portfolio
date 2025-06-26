@@ -2,18 +2,14 @@
 
 import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import { usePathname, useRouter } from 'next/navigation';
 
 // import { ModeToggle } from '@/app/components/mode-toggle';
-import { Dock, DockIcon } from '@/app/components/magicui/dock';
-import { buttonVariants } from '@/app/components/ui/button';
-import { Separator } from '@/app/components/ui/separator';
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipProvider,
-	TooltipTrigger,
-} from '@/app/components/ui/tooltip';
+import { Dock, DockIcon } from '@/components/magicui/dock';
+import { buttonVariants } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 import { motion } from 'motion/react';
 
@@ -95,6 +91,20 @@ const DATA = {
 };
 
 export function DockDemo() {
+	const [currentLocale, setCurrentLocale] = useState<'pl' | 'en'>('pl');
+
+	useEffect(() => {
+		if (typeof document !== 'undefined') {
+			const match = document.cookie.match(/NEXT_LOCALE=(en|pl)/);
+			if (match) setCurrentLocale(match[1] as 'pl' | 'en');
+		}
+	}, []);
+
+	const switchLocale = (nextLocale: 'pl' | 'en') => {
+		document.cookie = `NEXT_LOCALE=${nextLocale}; path=/; max-age=31536000`;
+		window.location.reload();
+	};
+
 	return (
 		<motion.div
 			initial={{ y: 100 }}
@@ -151,10 +161,24 @@ export function DockDemo() {
 					<DockIcon>
 						<Tooltip>
 							<TooltipTrigger asChild>
-								{/* Możesz tu dodać swój przełącznik motywu lub zostawić puste */}
+								<button
+									onClick={() =>
+										switchLocale(currentLocale === 'pl' ? 'en' : 'pl')
+									}
+									className={cn(
+										buttonVariants({ variant: 'ghost', size: 'icon' }),
+										'size-12 rounded-full cursor-pointer'
+									)}
+								>
+									{currentLocale === 'pl' ? 'EN' : 'PL'}
+								</button>
 							</TooltipTrigger>
 							<TooltipContent>
-								<p>Theme</p>
+								<p>
+									{currentLocale === 'pl'
+										? 'Zmień na angielski'
+										: 'Switch to Polish'}
+								</p>
 							</TooltipContent>
 						</Tooltip>
 					</DockIcon>

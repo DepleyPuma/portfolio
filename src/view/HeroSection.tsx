@@ -2,15 +2,17 @@
 
 import Image from 'next/image';
 import { motion, useAnimation } from 'motion/react';
-import { AnimatedText } from '@/app/components/animated/AnimatedText/AnimatedText';
-import DotGrid from '@/app/components/animated/DotGrid/DotGrid';
-import Magnet from '@/app/components/animated/Magnet/Magnet';
+import { AnimatedText } from '@/components/animated/AnimatedText/AnimatedText';
+import DotGrid from '@/components/animated/DotGrid/DotGrid';
+import Magnet from '@/components/animated/Magnet/Magnet';
 import gsap from 'gsap';
-import { ShimmerButton } from '@/app/components/magicui/shimmer-button';
+import { ShimmerButton } from '@/components/magicui/shimmer-button';
 import { SquareArrowOutUpRight } from 'lucide-react';
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
+	const t = useTranslations('HeroSection');
 	const controls = useAnimation();
 
 	useEffect(() => {
@@ -54,7 +56,7 @@ export function HeroSection() {
 						as='h1'
 						className='text-3xl md:text-4xl font-extrabold italic mb-2 text-white'
 					>
-						Cześć, jestem Szymon
+						{t('title')}
 					</AnimatedText>
 					<AnimatedText
 						splitBy='words'
@@ -63,7 +65,7 @@ export function HeroSection() {
 						as='h2'
 						className='text-xl md:text-2xl font-semibold mb-6 text-[#D9D9D9]'
 					>
-						Jestem Front-End Developerem
+						{t('subtitle')}
 					</AnimatedText>
 					<AnimatedText
 						splitBy='lines'
@@ -72,9 +74,7 @@ export function HeroSection() {
 						as='p'
 						className='mb-8 max-w-lg text-base md:text-lg text-[#ededed]'
 					>
-						Ostatnie 5 lat poświęciłem na budowanie i skalowanie oprogramowania dla
-						niesamowitych firm. Prowadzę również zajęcia online z malarstwa (na wypadek,
-						gdybyś miał/a puste płótno pod ręką). Skontaktujmy się!
+						{t('description')}
 					</AnimatedText>
 					<Magnet
 						padding={100}
@@ -93,7 +93,7 @@ export function HeroSection() {
 								onClick={handleScrollToContact}
 								className='inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold text-black bg-[var(--btn-bg-color)] shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-200 cursor-pointer'
 							>
-								Skontaktuj się
+								{t('contactButton')}
 								<SquareArrowOutUpRight size={20} />
 							</ShimmerButton>
 						</motion.div>
