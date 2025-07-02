@@ -39,7 +39,7 @@ export default function SmoothScrollProvider({ children }: { children: ReactNode
 			e.preventDefault();
 
 			const clientY = e.touches[0].clientY;
-			const delta = (lastY - clientY) * 3; // Multiplier for touch sensitivity
+			const delta = (lastY - clientY) * 10; // Multiplier for touch sensitivity
 			lastY = clientY;
 
 			const currentScroll = window.scrollY;
