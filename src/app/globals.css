@@ -7,9 +7,9 @@
 
 :root {
 	/* Portfolio custom colors (light mode) */
-	--website-bg-color: #fafafa;
-	--btn-bg-color: #222222;
-	--footer-bg-color: #ededed;
+	--website-bg-color: #0a0a0a;
+	--btn-bg-color: #d9d9d9;
+	--footer-bg-color: #1c1d20;
 	--font-sans: 'Montserrat', Arial, sans-serif;
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);
