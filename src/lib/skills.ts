@@ -1,0 +1,18 @@
+export const skills = [
+	'React',
+	'Next.js',
+	'HTML',
+	'CSS',
+	'JavaScript',
+	'TypeScript',
+	'SASS',
+	'PUG',
+	'Node.js',
+	'Framer Motion',
+	'Tailwind',
+	'Gulp',
+	'Docker',
+	'Webpack',
+	'Express.js',
+	'Git',
+];
