@@ -4,5 +4,16 @@
 		"subtitle": "Jestem Front-End Developerem",
 		"description": "Ostatnie 5 lat poświęciłem na budowanie i skalowanie oprogramowania dla niesamowitych firm. Prowadzę również zajęcia online z malarstwa (na wypadek, gdybyś miał/a puste płótno pod ręką). Skontaktujmy się!",
 		"contactButton": "Skontaktuj się"
+	},
+	"About": {
+		"title": "O mnie",
+		"description": "Lorem Ipsum to przykładowy tekst używany w przemyśle poligraficznym i typograficznym. Lorem Ipsum jest standardowym tekstem stosowanym od XVI wieku, kiedy nieznany drukarz poskładał zestaw czcionek, aby stworzyć egzemplarz książki. Przetrwał nie tylko pięć wieków, ale także rewolucję cyfrową, pozostając praktycznie niezmienionym. Spopularyzowany został w latach 60. XX wieku wraz z publikacją arkuszy Letrasetu zawierających fragmenty Lorem Ipsum, a ostatnio z programami do komputerowego składu tekstu, jak Aldus PageMaker, które zawierały wersje Lorem Ipsum.",
+		"button": "O mnie"
+	},
+	"WorkExperience": {
+		"title": "Doświadczenie zawodowe"
+	},
+	"Skills": {
+		"title": "Umiejętności"
 	}
 }
