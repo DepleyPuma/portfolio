@@ -54,7 +54,7 @@ export function HeroSection() {
 						duration={1}
 						delay={0.5}
 						as='h1'
-						className='text-3xl md:text-4xl font-extrabold italic mb-2 text-white'
+						className='text-4xl lg:text-5xl font-extrabold italic mb-2 text-white'
 					>
 						{t('title')}
 					</AnimatedText>
@@ -63,7 +63,7 @@ export function HeroSection() {
 						duration={1}
 						delay={1}
 						as='h2'
-						className='text-xl md:text-2xl font-semibold mb-6 text-[#D9D9D9]'
+						className='text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-[#D9D9D9]'
 					>
 						{t('subtitle')}
 					</AnimatedText>
@@ -91,7 +91,7 @@ export function HeroSection() {
 								shimmerColor='#5c5c5c'
 								background='var(--btn-bg-color)'
 								onClick={handleScrollToContact}
-								className='inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold text-black bg-[var(--btn-bg-color)] shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-200 cursor-pointer'
+								className='inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold text-black bg-[var(--btn-bg-color)] shadow-md hover:scale-110 hover:shadow-lg transition-transform duration-200 cursor-pointer'
 							>
 								{t('contactButton')}
 								<SquareArrowOutUpRight size={20} />
