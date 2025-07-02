@@ -1,11 +1,17 @@
 import { HeroSection } from '@/view/HeroSection';
 import { DockDemo } from '@/components/Navigation';
+import { About } from '@/view/About';
+import { Skills } from '@/view/Skills';
+import { WorkExperience } from '@/view/WorkExperience';
 
 export default function Home() {
 	return (
 		<div className='relative overflow-hidden'>
 			<HeroSection />
-			<div id='contact' className='h-screen w-full bg-red-200'></div>
+			<About />
+			<WorkExperience />
+			<Skills />
+			<div id='contact' className='h-screen w-full bg-[var(--website-bg-color)]'></div>
 			<DockDemo />
 		</div>
 	);
