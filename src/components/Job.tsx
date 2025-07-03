@@ -1,17 +1,44 @@
+'use client';
+
 import { workExperienceType } from '@/lib/workExperience';
 import Image from 'next/image';
+import { useRef } from 'react';
+import { useInView, motion } from 'motion/react';
 
-export function Job({ name, job, workStart, workEnd, image }: workExperienceType) {
+type JobProps = workExperienceType & {
+	delayIndex: number;
+};
+
+export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobProps) {
+	const ref = useRef(null);
+
+	const isInView = useInView(ref, { once: true, margin: '-100px 0px' });
+
+	const variants = {
+		hidden: { opacity: 0, y: 20 },
+		visible: { opacity: 1, y: 0 },
+	};
+
 	return (
-		<div className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'>
+		<motion.div
+			ref={ref}
+			variants={variants}
+			initial='hidden'
+			animate={isInView ? 'visible' : 'hidden'}
+			transition={{
+				duration: 0.5,
+				ease: 'easeInOut',
+				delay: delayIndex * 0.15,
+			}}
+			className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'>
 			<div className='flex gap-4'>
 				<div className='relative w-[50px] h-[50px] md:w-[100px] md:h-[100px]'>
 					<Image
 						src={image}
 						alt='company image'
 						fill
-						sizes='(max-width: 768px) 50vw, 33vw' // Wskazówka dla optymalizacji
-						className='object-contain' // Klasa Tailwind zamiast stylu inline
+						sizes='(max-width: 768px) 50vw, 33vw'
+						className='object-contain'
 					/>
 				</div>
 				<div className='space-y-1'>
@@ -24,6 +51,9 @@ export function Job({ name, job, workStart, workEnd, image }: workExperienceType
 					{workStart} - {workEnd}
 				</p>
 			</div>
-		</div>
+		</motion.div>
+		// <div className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'>
+
+		// {/* </div> */}
 	);
 }
