@@ -4,6 +4,7 @@ import { workExperienceType } from '@/lib/workExperience';
 import Image from 'next/image';
 import { useRef } from 'react';
 import { useInView, motion } from 'motion/react';
+import { useTranslations } from 'next-intl';
 
 type JobProps = workExperienceType & {
 	delayIndex: number;
@@ -19,6 +20,10 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 		visible: { opacity: 1, y: 0 },
 	};
 
+	const t = useTranslations('WorkExperience');
+	// const workStart = t(`${name}workStart`);
+	// const workEnd = t(`${name}workEnd`);
+
 	return (
 		<motion.div
 			ref={ref}
@@ -30,7 +35,8 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 				ease: 'easeInOut',
 				delay: delayIndex * 0.15,
 			}}
-			className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'>
+			className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'
+		>
 			<div className='flex gap-4'>
 				<div className='relative w-[50px] h-[50px] md:w-[100px] md:h-[100px]'>
 					<Image
@@ -48,7 +54,7 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 			</div>
 			<div>
 				<p className='text-muted-foreground font-bold text-sm md:text-lg'>
-					{workStart} - {workEnd}
+					{t(workStart)} - {t(workEnd)}
 				</p>
 			</div>
 		</motion.div>

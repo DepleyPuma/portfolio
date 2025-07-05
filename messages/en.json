@@ -11,9 +11,21 @@
 		"button": "About me"
 	},
 	"WorkExperience": {
-		"title": "Work Experience"
+		"title": "Work Experience",
+
+		"FCBworkStart": "April 2024",
+		"FCBworkEnd": "May 2025",
+
+		"BraughmanworkStart": "June 2024",
+		"BraughmanworkEnd": "August 2024",
+
+		"FreelancingworkStart": "June 2024",
+		"FreelancingworkEnd": "Now"
 	},
 	"Skills": {
 		"title": "Skills"
+	},
+	"Projects": {
+		"title": "My Projects"
 	}
 }
