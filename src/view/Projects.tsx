@@ -14,11 +14,11 @@ export function Projects() {
 					whileInView
 					delay={0.2}
 					as='h2'
-					className='text-3xl md:text-4xl xl:text-5xl font-extrabold italic mb-6 text-white'
-				>
+					className='text-3xl md:text-4xl xl:text-5xl font-extrabold italic mb-6 text-white'>
 					{t('title')}
 				</AnimatedText>
 			</div>
+			<Project />
 			<Project />
 		</section>
 	);
