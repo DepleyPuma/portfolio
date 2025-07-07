@@ -8,12 +8,15 @@ import Magnet from '@/components/animated/Magnet/Magnet';
 import gsap from 'gsap';
 import { ShimmerButton } from '@/components/magicui/shimmer-button';
 import { SquareArrowOutUpRight } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
 	const t = useTranslations('HeroSection');
 	const controls = useAnimation();
+
+	const [delay, setDelay] = useState(2);
+	const playedOnce = useRef(false);
 
 	useEffect(() => {
 		// Najpierw fade-in, potem pulsowanie
@@ -84,8 +87,15 @@ export function HeroSection() {
 					>
 						<motion.div
 							initial={{ opacity: 0, scale: 0.1 }}
-							animate={{ opacity: 1, scale: [0.1, 1] }}
-							transition={{ duration: 0.5, ease: 'easeInOut', delay: 2 }}
+							whileInView={{ opacity: 1, scale: [0.1, 1] }}
+							transition={{ duration: 0.5, ease: 'easeInOut', delay }}
+							onViewportEnter={() => {
+								// Jeśli animacja już się raz wykonała, delay = 0
+								if (!playedOnce.current) {
+									playedOnce.current = true;
+									setDelay(0);
+								}
+							}}
 						>
 							<ShimmerButton
 								shimmerColor='#5c5c5c'

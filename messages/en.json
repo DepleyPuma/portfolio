@@ -26,6 +26,33 @@
 		"title": "Skills"
 	},
 	"Projects": {
-		"title": "My Projects"
+		"title": "My Projects",
+		"EduPlatformDescription": "Modern e-learning platform for schools and universities, enabling online courses, tests, and progress tracking.",
+		"EduPlatformFeature1": "Interactive tests and quizzes",
+		"EduPlatformFeature2": "Admin panel for teachers",
+		"EduPlatformFeature3": "Push notification system",
+		"EduPlatformFeature4": "Responsive design",
+
+		"TrzyCzteRyDescription": "Website presenting the offer of a company renting inflatables, making it easy to browse the catalog with technical data and photo gallery.",
+		"TrzyCzteRyFeature1": "Filtering individual attractions",
+		"TrzyCzteRyFeature2": "Inflatable offers",
+		"TrzyCzteRyFeature3": "Responsive Design",
+		"TrzyCzteRyFeature4": "SEO and speed optimization for best user experience",
+
+		"ShoplyDescription": "Online store with an advanced product recommendation system and instant payments.",
+		"ShoplyFeature1": "AI-powered recommendations",
+		"ShoplyFeature2": "One-click payments",
+		"ShoplyFeature3": "Order history and shipment tracking",
+		"ShoplyFeature4": "Review and rating system",
+
+		"TravelioDescription": "Platform for booking trips and accommodations with an interactive map and user reviews.",
+		"TravelioFeature1": "Offer search on the map",
+		"TravelioFeature2": "Review and rating system",
+		"TravelioFeature3": "Promotion notifications",
+		"TravelioFeature4": "Google Calendar integration"
+	},
+	"Footer": {
+		"title": "Let's work",
+		"subtitle": "together"
 	}
 }

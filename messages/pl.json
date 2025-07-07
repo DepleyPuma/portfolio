@@ -26,6 +26,33 @@
 		"title": "Umiejętności"
 	},
 	"Projects": {
-		"title": "Moje Projekty"
+		"title": "Moje Projekty",
+		"EduPlatformDescription": "Nowoczesna platforma e-learningowa dla szkół i uczelni, umożliwiająca prowadzenie kursów online, testów oraz śledzenie postępów uczniów.",
+		"EduPlatformFeature1": "Interaktywne testy i quizy",
+		"EduPlatformFeature2": "Panel administracyjny dla nauczycieli",
+		"EduPlatformFeature3": "System powiadomień push",
+		"EduPlatformFeature4": "Responsywny design",
+
+		"TrzyCzteRyDescription": "Strona internetowa prezentująca ofertę firmy wynajmującej dmuchańce, ułatwiająca przeglądanie katalogu ofert wraz z ich danymi technicznymi i galerią zdjęć.",
+		"TrzyCzteRyFeature1": "Filtrowanie poszczególnych atrakcji ",
+		"TrzyCzteRyFeature2": "Oferty Dmuchańców",
+		"TrzyCzteRyFeature3": "Responsywny Design",
+		"TrzyCzteRyFeature4": "Optymalizacja SEO i szybkości ładowania strony tak, aby zapewnić jak największy komfort użytkownikowi",
+
+		"ShoplyDescription": "Sklep internetowy z rozbudowanym systemem rekomendacji produktów i błyskawicznymi płatnościami.",
+		"ShoplyFeature1": "Inteligentne rekomendacje AI",
+		"ShoplyFeature2": "Płatności jednym kliknięciem",
+		"ShoplyFeature3": "Historia zamówień i śledzenie przesyłek",
+		"ShoplyFeature4": "System opinii i ocen",
+
+		"TravelioDescription": "Platforma do rezerwacji wycieczek i noclegów z interaktywną mapą oraz opiniami użytkowników.",
+		"TravelioFeature1": "Wyszukiwanie ofert na mapie",
+		"TravelioFeature2": "System recenzji i ocen",
+		"TravelioFeature3": "Powiadomienia o promocjach",
+		"TravelioFeature4": "Integracja z kalendarzem Google"
+	},
+	"Footer": {
+		"title": "Pracujmy razem",
+		"subtitle": ""
 	}
 }

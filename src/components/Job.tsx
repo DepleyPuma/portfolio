@@ -21,8 +21,6 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 	};
 
 	const t = useTranslations('WorkExperience');
-	// const workStart = t(`${name}workStart`);
-	// const workEnd = t(`${name}workEnd`);
 
 	return (
 		<motion.div
@@ -37,8 +35,8 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 			}}
 			className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'
 		>
-			<div className='flex gap-4'>
-				<div className='relative w-[50px] h-[50px] md:w-[100px] md:h-[100px]'>
+			<div className='flex gap-4 md:gap-6'>
+				<div className='relative min-w-[40px] h-[50px] md:w-[100px] md:h-[100px]'>
 					<Image
 						src={image}
 						alt='company image'
