@@ -1,13 +1,17 @@
 {
+	"Navigation": {
+		"home": "Home",
+		"about": "O mnie"
+	},
 	"HeroSection": {
 		"title": "Cześć, jestem Szymon",
 		"subtitle": "Jestem Front-End Developerem",
-		"description": "Ostatnie 5 lat poświęciłem na budowanie i skalowanie oprogramowania dla niesamowitych firm. Prowadzę również zajęcia online z malarstwa (na wypadek, gdybyś miał/a puste płótno pod ręką). Skontaktujmy się!",
+		"description": "Ostatnie 2 lat poświęciłem na naukę i kodowanie niesamowitych stron internetowych oraz oprogramowania. Zajawkowo również montuje filmy (na wypadek, gdybyś miał/a super pomysł bądź wizje). Skontaktujmy się!",
 		"contactButton": "Skontaktuj się"
 	},
 	"About": {
 		"title": "O mnie",
-		"description": "Lorem Ipsum to przykładowy tekst używany w przemyśle poligraficznym i typograficznym. Lorem Ipsum jest standardowym tekstem stosowanym od XVI wieku, kiedy nieznany drukarz poskładał zestaw czcionek, aby stworzyć egzemplarz książki. Przetrwał nie tylko pięć wieków, ale także rewolucję cyfrową, pozostając praktycznie niezmienionym. Spopularyzowany został w latach 60. XX wieku wraz z publikacją arkuszy Letrasetu zawierających fragmenty Lorem Ipsum, a ostatnio z programami do komputerowego składu tekstu, jak Aldus PageMaker, które zawierały wersje Lorem Ipsum.",
+		"description": "Cześć, jestem Szymon. Jako programista Front-End zamieniam projekty w nowoczesne i wydajne strony internetowe. Ta strona jest wizytówką moich możliwości – pokazuję, jak powinien wyglądać dobrze zrobiony projekt w sieci. Mam ponad rok doświadczenia komercyjnego, ale koduję znacznie dłużej. Co mnie wyróżnia? Realizm i partnerskie podejście. Wiem, jaki produkt mogę dostarczyć i zawsze stawiam na jakość oraz transparentną komunikację. Potrzebujesz solidnej strony dla swojego biznesu? Zapraszam do kontaktu.",
 		"button": "O mnie"
 	},
 	"WorkExperience": {
@@ -39,20 +43,30 @@
 		"TrzyCzteRyFeature3": "Responsywny Design",
 		"TrzyCzteRyFeature4": "Optymalizacja SEO i szybkości ładowania strony tak, aby zapewnić jak największy komfort użytkownikowi",
 
-		"ShoplyDescription": "Sklep internetowy z rozbudowanym systemem rekomendacji produktów i błyskawicznymi płatnościami.",
-		"ShoplyFeature1": "Inteligentne rekomendacje AI",
-		"ShoplyFeature2": "Płatności jednym kliknięciem",
-		"ShoplyFeature3": "Historia zamówień i śledzenie przesyłek",
-		"ShoplyFeature4": "System opinii i ocen",
+		"SparkAmberDescription": "Strona stworzona według własnego projektu aby zaznajomić się z biblioteką Framer Motion",
+		"SparkAmberFeature1": "Animacje z użyciem Framer Motion",
+		"SparkAmberFeature2": "Czysty i schludny styl",
+		"SparkAmberFeature3": "Działająca bramka płatności Stripe",
+		"SparkAmberFeature4": "Recenzja i oceny",
 
 		"TravelioDescription": "Platforma do rezerwacji wycieczek i noclegów z interaktywną mapą oraz opiniami użytkowników.",
 		"TravelioFeature1": "Wyszukiwanie ofert na mapie",
 		"TravelioFeature2": "System recenzji i ocen",
 		"TravelioFeature3": "Powiadomienia o promocjach",
-		"TravelioFeature4": "Integracja z kalendarzem Google"
+		"TravelioFeature4": "Integracja z kalendarzem Google",
+
+		"PortfolioDescription": "Moje portfolio stworzone w celu zaprezentowania umiejętności, projektów oraz doświadczenia. Nowoczesny design, animacje i pełna responsywność.",
+		"PortfolioFeature1": "Nowoczesny, responsywny design",
+		"PortfolioFeature2": "Animacje z użyciem Framer Motion",
+		"PortfolioFeature3": "Wielojęzyczność (i18n)",
+		"PortfolioFeature4": "Optymalizacja wydajności i SEO",
+
+		"close": "Zamknij",
+		"live": "Zobacz"
 	},
 	"Footer": {
 		"title": "Pracujmy razem",
-		"subtitle": ""
+		"subtitle": "",
+		"buttonContact": "Skontaktuj się"
 	}
 }

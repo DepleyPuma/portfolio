@@ -26,6 +26,7 @@ export function Projects() {
 						key={project.title + idx}
 						title={project.title}
 						description={project.description}
+						url={project.url}
 						image={project.image}
 						technologies={project.technologies}
 						features={project.features}

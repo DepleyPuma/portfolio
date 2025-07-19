@@ -1,13 +1,17 @@
 {
+	"Navigation": {
+		"home": "Home",
+		"about": "About me"
+	},
 	"HeroSection": {
 		"title": "Hi, I'm Szymon",
 		"subtitle": "I'm a Front-End Developer",
-		"description": "For the last 5 years, I've been building and scaling software for amazing companies. I also teach online painting classes (in case you have a blank canvas handy). Let's get in touch!",
+		"description": "I have spent the last 2 years learning and coding amazing websites and software. Occasionally I also edit videos (in case you have a super idea or visions). Let's get in touch!",
 		"contactButton": "Contact me"
 	},
 	"About": {
 		"title": "About me",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Hi, I'm Szymon. As a Front-End developer, I turn projects into modern and efficient websites. This site is a showcase of my capabilities - I demonstrate what a well-done project should look like on the web. I have over a year of commercial experience, but I've been coding much longer than that. What sets me apart? Realism and partnership approach. I know what kind of product I can deliver and always focus on quality and transparent communication. Do you need a solid website for your business? I invite you to contact me.",
 		"button": "About me"
 	},
 	"WorkExperience": {
@@ -39,20 +43,30 @@
 		"TrzyCzteRyFeature3": "Responsive Design",
 		"TrzyCzteRyFeature4": "SEO and speed optimization for best user experience",
 
-		"ShoplyDescription": "Online store with an advanced product recommendation system and instant payments.",
-		"ShoplyFeature1": "AI-powered recommendations",
-		"ShoplyFeature2": "One-click payments",
-		"ShoplyFeature3": "Order history and shipment tracking",
-		"ShoplyFeature4": "Review and rating system",
+		"SparkAmberDescription": "Site created by custom design to familiarize yourself with Framer Motion",
+		"SparkAmberFeature1": "Framer Motion animation",
+		"SparkAmberFeature2": "Clean and tidy styles",
+		"SparkAmberFeature3": "Working Paypments using Stripe",
+		"SparkAmberFeature4": "Review and rating",
 
 		"TravelioDescription": "Platform for booking trips and accommodations with an interactive map and user reviews.",
 		"TravelioFeature1": "Offer search on the map",
 		"TravelioFeature2": "Review and rating system",
 		"TravelioFeature3": "Promotion notifications",
-		"TravelioFeature4": "Google Calendar integration"
+		"TravelioFeature4": "Google Calendar integration",
+
+		"PortfolioDescription": "My portfolio created to showcase my skills, projects, and experience. Modern design, animations, and full responsiveness.",
+		"PortfolioFeature1": "Modern, responsive design",
+		"PortfolioFeature2": "Animations using Framer Motion",
+		"PortfolioFeature3": "Multilingual (i18n)",
+		"PortfolioFeature4": "Performance and SEO optimization",
+
+		"close": "Close",
+		"live": "Live"
 	},
 	"Footer": {
 		"title": "Let's work",
-		"subtitle": "together"
+		"subtitle": "together",
+		"buttonContact": "Get in touch"
 	}
 }

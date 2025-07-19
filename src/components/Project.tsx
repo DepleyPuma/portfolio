@@ -4,11 +4,13 @@ import { AnimatePresence, motion, useInView } from 'motion/react';
 import Image from 'next/image';
 import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 type ProjectTypeProps = {
 	image?: string;
 	title?: string;
 	description?: string;
+	url: string;
 	technologies?: string[];
 	features?: string[];
 	delayIndex: number;
@@ -18,6 +20,7 @@ export const Project = ({
 	image = '/test.webp',
 	title = 'Project Name',
 	description = 'Opis projektu...',
+	url,
 	technologies = [],
 	features = [],
 	delayIndex,
@@ -67,6 +70,7 @@ export const Project = ({
 				isOpen={isOpen}
 				setIsOpen={setIsOpen}
 				title={title}
+				url={url}
 				image={image}
 				description={description}
 				technologies={technologies}
@@ -81,6 +85,7 @@ const SpringModal = ({
 	isOpen,
 	setIsOpen,
 	title,
+	url,
 	image,
 	description,
 	technologies = [],
@@ -90,6 +95,7 @@ const SpringModal = ({
 	isOpen: boolean;
 	setIsOpen: (open: boolean) => void;
 	title: string;
+	url: string;
 	image: string;
 	description: string;
 	technologies?: string[];
@@ -154,14 +160,15 @@ const SpringModal = ({
 								onClick={() => setIsOpen(false)}
 								className='bg-white/10 hover:bg-white/25 transition-colors text-white font-semibold w-full py-2 rounded cursor-pointer'
 							>
-								Zamknij
+								{t('close')}
 							</button>
-							<button
+							<Link
+								href={url}
 								onClick={() => setIsOpen(false)}
-								className='bg-white/20 hover:bg-white/25 transition-colors text-white font-semibold w-full py-2 rounded cursor-pointer'
+								className='bg-white/20 hover:bg-white/25 transition-colors text-center text-white font-semibold w-full py-2 rounded cursor-pointer'
 							>
-								Zobacz
-							</button>
+								{t('live')}
+							</Link>
 						</div>
 					</div>
 				</motion.div>

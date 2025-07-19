@@ -1,6 +1,7 @@
 export type ProjectType = {
 	title: string;
 	description: string;
+	url: string;
 	image: string;
 	technologies: string[];
 	features: string[];
@@ -11,6 +12,7 @@ export const projects: ProjectType[] = [
 		title: 'EduPlatform',
 		description: 'EduPlatformDescription',
 		image: '/test.webp',
+		url: 'test',
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
 		features: [
 			'EduPlatformFeature1',
@@ -22,7 +24,8 @@ export const projects: ProjectType[] = [
 	{
 		title: 'Trzy-czte-ry',
 		description: 'TrzyCzteRyDescription',
-		image: '/test.webp',
+		image: '/projects/HOME_PAGE.webp',
+		url: 'https://www.trzy-czte-ry.com.pl/',
 		technologies: ['React', 'TailwindCSS', 'Shadcn-UI', 'TypeScript'],
 		features: [
 			'TrzyCzteRyFeature1',
@@ -32,17 +35,29 @@ export const projects: ProjectType[] = [
 		],
 	},
 	{
-		title: 'Shoply',
-		description: 'ShoplyDescription',
-		image: '/test.webp',
-		technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe API'],
-		features: ['ShoplyFeature1', 'ShoplyFeature2', 'ShoplyFeature3', 'ShoplyFeature4'],
+		title: 'Spark Amber',
+		description: 'SparkAmberDescription',
+		image: '/projects/spark_amber.webp',
+		url: 'test',
+		technologies: ['Next.js', 'TailwindCSS', 'Framer Motion', 'Stripe'],
+		features: [
+			'SparkAmberFeature1',
+			'SparkAmberFeature2',
+			'SparkAmberFeature3',
+			'SparkAmberFeature4',
+		],
 	},
 	{
-		title: 'Travelio',
-		description: 'TravelioDescription',
-		image: '/test.webp',
-		technologies: ['Angular', 'NestJS', 'MySQL', 'Google Maps API'],
-		features: ['TravelioFeature1', 'TravelioFeature2', 'TravelioFeature3', 'TravelioFeature4'],
+		title: 'Portfolio',
+		description: 'PortfolioDescription',
+		image: '/projects/portfolio.webp',
+		url: 'https://szymon-szyszka.pl',
+		technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel', 'i18n'],
+		features: [
+			'PortfolioFeature1',
+			'PortfolioFeature2',
+			'PortfolioFeature3',
+			'PortfolioFeature4',
+		],
 	},
 ];

@@ -12,6 +12,7 @@ import { Separator } from '@/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 import { motion } from 'motion/react';
+import { useTranslations } from 'next-intl';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -70,8 +71,8 @@ export const Icons = {
 
 const DATA = {
 	navbar: [
-		{ href: '/', icon: HomeIcon, label: 'Home' },
-		{ href: '#', icon: PencilIcon, label: 'Blog' },
+		{ href: '/', icon: HomeIcon, label: 'home' },
+		{ href: '#', icon: PencilIcon, label: 'about' },
 	],
 	contact: {
 		social: {
@@ -101,6 +102,7 @@ const DATA = {
 
 export function DockDemo() {
 	const [currentLocale, setCurrentLocale] = useState<'pl' | 'en'>('pl');
+	const t = useTranslations('Navigation');
 
 	useEffect(() => {
 		if (typeof document !== 'undefined') {
@@ -139,7 +141,8 @@ export function DockDemo() {
 									</Link>
 								</TooltipTrigger>
 								<TooltipContent>
-									<p>{item.label}</p>
+									{/* <p>{item.label}</p> */}
+									<p>{t(item.label)}</p>
 								</TooltipContent>
 							</Tooltip>
 						</DockIcon>
