@@ -1,7 +1,13 @@
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
+import { Metadata } from 'next';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+
+export const metadata: Metadata = {
+	title: 'Szymon Szarek | Tworzenie stron internetowych',
+	description: 'Tworzę strony internetowe takie które pomogą ci zaistnieć w siecie',
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 	const locale = await getLocale();
