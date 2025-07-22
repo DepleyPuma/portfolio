@@ -72,7 +72,7 @@ export const Icons = {
 const DATA = {
 	navbar: [
 		{ href: '/', icon: HomeIcon, label: 'home' },
-		{ href: '#', icon: PencilIcon, label: 'about' },
+		{ href: '/about', icon: PencilIcon, label: 'about' },
 	],
 	contact: {
 		social: {

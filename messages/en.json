@@ -68,5 +68,30 @@
 		"title": "Let's work",
 		"subtitle": "together",
 		"buttonContact": "Get in touch"
+	},
+
+	"AboutSubPage": {
+		"title": "About me",
+		"intro": "Hi, I'm Szymon – a front-end developer with a passion for code, aesthetics, and... physical fitness.",
+		"daily": "Every day, I design and build modern websites – ones that not only look good but also run fast, intuitively, and without compromise. I love combining logic with creativity – it's that mix that got me hooked on web development.",
+		"lifestyle": "But my life isn’t just digital. I’ve been a volunteer firefighter for years – a role that taught me responsibility, pressure management, and teamwork. On top of that, I train regularly – the gym is like a second home to me, and I go there up to 5 times a week. I care about my body because physical fitness isn’t just about looks – it’s about energy, discipline, and health, all of which influence how I work.",
+		"hobbies": "After hours, I enjoy editing videos – sometimes for myself, sometimes for friends with a vision. It’s my creative break from code and a great exercise in attention to detail.",
+		"approach": "In work, I focus on quality, a realistic approach, and a true partnership. I don’t make empty promises – instead, I deliver solid solutions, clear communication, and full engagement from start to finish.",
+		"closing": "If you're looking for someone who not only knows front-end but also has clear priorities and knows how to get things done – feel free to reach out."
+	},
+
+	"services": {
+		"design": {
+			"title": "Design",
+			"description": "I design intuitive and visually appealing interfaces that attract attention and are enjoyable to use. I focus on consistency and usability."
+		},
+		"development": {
+			"title": "Development",
+			"description": "I turn designs into modern websites – fast, responsive, and optimized for all devices."
+		},
+		"package": {
+			"title": "The full package",
+			"description": "From the first idea to the final launch – I provide full support at every stage of building a website or application."
+		}
 	}
 }

@@ -1,10 +1,9 @@
-import { HeroSection } from '@/view/HeroSection';
-import { DockDemo } from '@/components/Navigation';
 import { About } from '@/view/About';
+import { Footer } from '@/view/Footer';
+import { HeroSection } from '@/view/HeroSection';
+import { Projects } from '@/view/Projects';
 import { Skills } from '@/view/Skills';
 import { WorkExperience } from '@/view/WorkExperience';
-import { Projects } from '@/view/Projects';
-import { Footer } from '@/view/Footer';
 
 export default function Home() {
 	return (
@@ -15,7 +14,6 @@ export default function Home() {
 			<Skills />
 			<Projects />
 			<Footer />
-			<DockDemo />
 		</div>
 	);
 }

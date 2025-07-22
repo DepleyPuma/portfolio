@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+import { DockDemo } from '@/components/Navigation';
 
 export const metadata: Metadata = {
 	title: 'Szymon Szarek | Tworzenie stron internetowych',
@@ -17,6 +18,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 			<body>
 				<NextIntlClientProvider>
 					<SmoothScrollProvider>{children}</SmoothScrollProvider>
+					<DockDemo />
 				</NextIntlClientProvider>
 			</body>
 		</html>

@@ -43,13 +43,14 @@ export function About() {
 							transition={{ duration: 0.5, ease: 'easeInOut' }}
 							className='relative w-full md:w-auto h-[200px] md:h-[250px] z-10'
 						>
-							<motion.button
+							<motion.a
+								href='/about'
 								whileHover={{ scale: 1.08 }}
 								whileTap={{ scale: 0.95 }}
 								className='rounded-full w-40 h-40 md:w-50 md:h-50 bg-[#ededed] text-black flex items-center justify-center text-lg font-semibold cursor-pointer shadow-lg'
 							>
 								{t('button')}
-							</motion.button>
+							</motion.a>
 						</motion.div>
 					</Magnet>
 				</div>
