@@ -41,14 +41,14 @@ export function Footer() {
 				<div className='absolute bottom-85 right-10 md:bottom-70 2xl:right-100 z-10'>
 					<Magnet>
 						<div className='relative w-full md:w-auto h-[200px] md:h-[250px] z-10'>
-							<motion.button
+							<motion.a
+								href='/contact'
 								whileHover={{ scale: 1.08 }}
 								whileTap={{ scale: 0.95 }}
 								className='rounded-full w-40 h-40 md:w-50 md:h-50 bg-[#ededed] text-black flex items-center justify-center text-lg font-semibold cursor-pointer shadow-lg'
 							>
 								{t('buttonContact')}
-								{/* Get in touch */}
-							</motion.button>
+							</motion.a>
 						</div>
 					</Magnet>
 				</div>
