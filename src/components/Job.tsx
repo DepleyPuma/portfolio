@@ -2,7 +2,7 @@
 
 import { workExperienceType } from '@/lib/workExperience';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useInView, motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 
@@ -11,15 +11,23 @@ type JobProps = workExperienceType & {
 };
 
 export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobProps) {
+	const [mobileScreenWidth, setMobileScreenWidth] = useState(0);
 	const ref = useRef(null);
 
-	const isInView = useInView(ref, { once: true, margin: '-100px 0px' });
+	useEffect(() => {
+		setMobileScreenWidth(window.innerWidth);
 
+		const handleResize = () => setMobileScreenWidth(window.innerWidth);
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
+
+	const isInView = useInView(ref, { once: true, margin: '-100px 0px' });
 	const variants = {
 		hidden: { opacity: 0, y: 20 },
 		visible: { opacity: 1, y: 0 },
 	};
-
 	const t = useTranslations('WorkExperience');
 
 	return (
@@ -35,7 +43,7 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 			}}
 			className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'
 		>
-			<div className='flex gap-4 md:gap-6'>
+			<div className='flex flex-1/2 gap-4 md:gap-6'>
 				<div className='relative min-w-[40px] h-[50px] md:w-[100px] md:h-[100px]'>
 					<Image
 						src={image}
@@ -51,13 +59,12 @@ export function Job({ name, job, workStart, workEnd, image, delayIndex }: JobPro
 				</div>
 			</div>
 			<div>
-				<p className='text-muted-foreground font-bold text-sm md:text-lg'>
-					{t(workStart)} - {t(workEnd)}
+				<p className='flex-1/3 flex flex-col justify-center items-center md:flex-row md:gap-2 text-muted-foreground font-bold text-sm md:text-lg'>
+					<span>{t(workStart)}</span>
+					<span>{mobileScreenWidth < 768 ? '|' : '-'}</span>
+					<span>{t(workEnd)}</span>
 				</p>
 			</div>
 		</motion.div>
-		// <div className='flex justify-between items-center mt-10 max-w-6xl w-full text-white'>
-
-		// {/* </div> */}
 	);
 }
