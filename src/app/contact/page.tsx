@@ -13,7 +13,7 @@ function page() {
 						as='h1'
 						className='text-4xl lg:text-5xl font-extrabold italic mb-2 text-white'
 					>
-						Let's make something together
+						{"Let's make something together"}
 					</AnimatedText>
 					{/* <AnimatedText
 						splitBy='words'
