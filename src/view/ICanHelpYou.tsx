@@ -29,13 +29,14 @@ export function ICanHelpYou() {
 
 	return (
 		<section className='relative w-full flex flex-col justify-center items-start bg-[var(--website-bg-color)] text-[var(--foreground)] px-4 py-16 font-sans'>
-			<div className='flex justify-center items-start gap-2'>
+			<div className='flex justify-center items-baseline gap-2'>
 				<AnimatedText
 					splitBy='words'
 					duration={1}
 					delay={0.5}
 					as='h2'
-					className='text-4xl xl:text-5xl font-extrabold italic mb-16 text-white'>
+					className='text-4xl xl:text-5xl font-extrabold italic mb-16 text-white'
+				>
 					I can help you with
 				</AnimatedText>
 				<motion.div
@@ -47,15 +48,27 @@ export function ICanHelpYou() {
 						duration: 0.5,
 						ease: 'easeInOut',
 						delay: 0.6,
-					}}>
+					}}
+					className='hidden md:block'
+				>
 					<motion.div
 						initial='hidden'
 						animate='jump'
 						transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
-						className='flex justify-center items-center gap-1'>
-						<motion.div className='w-2.5 h-2.5 rounded-full mt-8 bg-white' variants={dotVariants} />
-						<motion.div className='w-2.5 h-2.5 rounded-full mt-8 bg-white' variants={dotVariants} />
-						<motion.div className='w-2.5 h-2.5 rounded-full mt-8 bg-white' variants={dotVariants} />
+						className='flex justify-center items-center gap-1'
+					>
+						<motion.div
+							className='w-2.5 h-2.5 rounded-full bg-white'
+							variants={dotVariants}
+						/>
+						<motion.div
+							className='w-2.5 h-2.5 rounded-full bg-white'
+							variants={dotVariants}
+						/>
+						<motion.div
+							className='w-2.5 h-2.5 rounded-full bg-white'
+							variants={dotVariants}
+						/>
 					</motion.div>
 				</motion.div>
 			</div>
