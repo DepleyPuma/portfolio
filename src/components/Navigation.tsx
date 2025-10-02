@@ -11,7 +11,7 @@ import { buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
-import { motion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
@@ -102,7 +102,34 @@ const DATA = {
 
 export function DockDemo() {
 	const [currentLocale, setCurrentLocale] = useState<'pl' | 'en'>('pl');
+	const [isDockShown, setIsDockShown] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 	const t = useTranslations('Navigation');
+
+	useEffect(() => {
+		const checkIsMobie = () => {
+			setIsMobile(window.innerWidth < 768);
+		};
+		checkIsMobie();
+	}, []);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY;
+			const distanceAfterScrollShow = 180;
+
+			if (isMobile) {
+				setIsDockShown(scrollY > distanceAfterScrollShow);
+			} else {
+				setIsDockShown(true);
+			}
+		};
+
+		handleScroll();
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [isMobile]);
 
 	useEffect(() => {
 		if (typeof document !== 'undefined') {
@@ -117,85 +144,95 @@ export function DockDemo() {
 	};
 
 	return (
-		<motion.div
-			initial={{ y: 100 }}
-			animate={{ y: 0 }}
-			transition={{ delay: 0.5 }}
-			className='flex flex-col items-center justify-center fixed bottom-10 left-0 right-0 z-100'
-		>
-			<TooltipProvider>
-				<Dock direction='middle'>
-					{DATA.navbar.map(item => (
-						<DockIcon key={item.label}>
-							<Tooltip>
-								<TooltipTrigger asChild>
-									<Link
-										href={item.href}
-										aria-label={item.label}
-										className={cn(
-											buttonVariants({ variant: 'ghost', size: 'icon' }),
-											'size-12 rounded-full text-white'
-										)}
-									>
-										<item.icon className='size-4' />
-									</Link>
-								</TooltipTrigger>
-								<TooltipContent>
-									{/* <p>{item.label}</p> */}
-									<p>{t(item.label)}</p>
-								</TooltipContent>
-							</Tooltip>
-						</DockIcon>
-					))}
-					<Separator orientation='vertical' className='h-full' />
-					{Object.entries(DATA.contact.social).map(([name, social]) => (
-						<DockIcon key={name}>
-							<Tooltip>
-								<TooltipTrigger asChild>
-									<Link
-										href={social.url}
-										aria-label={social.name}
-										className={cn(
-											buttonVariants({ variant: 'ghost', size: 'icon' }),
-											'size-12 rounded-full text-white'
-										)}
-									>
-										<social.icon className='size-4' />
-									</Link>
-								</TooltipTrigger>
-								<TooltipContent>
-									<p>{name}</p>
-								</TooltipContent>
-							</Tooltip>
-						</DockIcon>
-					))}
-					<Separator orientation='vertical' className='h-full py-2' />
-					<DockIcon>
-						<Tooltip>
-							<TooltipTrigger asChild>
-								<button
-									onClick={() =>
-										switchLocale(currentLocale === 'pl' ? 'en' : 'pl')
-									}
-									className={cn(
-										buttonVariants({ variant: 'ghost', size: 'icon' }),
-										'size-12 rounded-full cursor-pointer text-white'
-									)}
-								>
-									{currentLocale === 'pl' ? 'EN' : 'PL'}
-								</button>
-							</TooltipTrigger>
-							<TooltipContent>
-								<p>
-									{currentLocale === 'pl'
-										? 'Zmień na angielski'
-										: 'Switch to Polish'}
-								</p>
-							</TooltipContent>
-						</Tooltip>
-					</DockIcon>
-				</Dock>
-			</TooltipProvider>
-		</motion.div>
+		<AnimatePresence>
+			{isDockShown && (
+				<motion.div
+					initial={{ y: 100 }}
+					animate={{ y: 0 }}
+					transition={{ delay: 0.5 }}
+					className='flex flex-col items-center justify-center fixed bottom-10 left-0 right-0 z-100'
+				>
+					<TooltipProvider>
+						<Dock direction='middle'>
+							{DATA.navbar.map(item => (
+								<DockIcon key={item.label}>
+									<Tooltip>
+										<TooltipTrigger asChild>
+											<Link
+												href={item.href}
+												aria-label={item.label}
+												className={cn(
+													buttonVariants({
+														variant: 'ghost',
+														size: 'icon',
+													}),
+													'size-12 rounded-full text-white'
+												)}
+											>
+												<item.icon className='size-4' />
+											</Link>
+										</TooltipTrigger>
+										<TooltipContent>
+											{/* <p>{item.label}</p> */}
+											<p>{t(item.label)}</p>
+										</TooltipContent>
+									</Tooltip>
+								</DockIcon>
+							))}
+							<Separator orientation='vertical' className='h-full' />
+							{Object.entries(DATA.contact.social).map(([name, social]) => (
+								<DockIcon key={name}>
+									<Tooltip>
+										<TooltipTrigger asChild>
+											<Link
+												href={social.url}
+												aria-label={social.name}
+												className={cn(
+													buttonVariants({
+														variant: 'ghost',
+														size: 'icon',
+													}),
+													'size-12 rounded-full text-white'
+												)}
+											>
+												<social.icon className='size-4' />
+											</Link>
+										</TooltipTrigger>
+										<TooltipContent>
+											<p>{name}</p>
+										</TooltipContent>
+									</Tooltip>
+								</DockIcon>
+							))}
+							<Separator orientation='vertical' className='h-full py-2' />
+							<DockIcon>
+								<Tooltip>
+									<TooltipTrigger asChild>
+										<button
+											onClick={() =>
+												switchLocale(currentLocale === 'pl' ? 'en' : 'pl')
+											}
+											className={cn(
+												buttonVariants({ variant: 'ghost', size: 'icon' }),
+												'size-12 rounded-full cursor-pointer text-white'
+											)}
+										>
+											{currentLocale === 'pl' ? 'EN' : 'PL'}
+										</button>
+									</TooltipTrigger>
+									<TooltipContent>
+										<p>
+											{currentLocale === 'pl'
+												? 'Zmień na angielski'
+												: 'Switch to Polish'}
+										</p>
+									</TooltipContent>
+								</Tooltip>
+							</DockIcon>
+						</Dock>
+					</TooltipProvider>
+				</motion.div>
+			)}
+		</AnimatePresence>
 	);
 }
