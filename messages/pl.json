@@ -6,7 +6,7 @@
 	"HeroSection": {
 		"title": "Cześć, jestem Szymon",
 		"subtitle": "Jestem Front-End Developerem",
-		"description": "Ostatnie 2 lat poświęciłem na naukę i kodowanie niesamowitych stron internetowych oraz oprogramowania. Zajawkowo również montuje filmy (na wypadek, gdybyś miał/a super pomysł bądź wizje). Skontaktujmy się!",
+		"description": "Ostatnie 2 lata poświęciłem na naukę i kodowanie niesamowitych stron internetowych oraz oprogramowania. Zajawkowo również montuje filmy (na wypadek, gdybyś miał/a super pomysł bądź wizje). Skontaktujmy się!",
 		"contactButton": "Skontaktuj się"
 	},
 	"About": {
@@ -31,35 +31,25 @@
 	},
 	"Projects": {
 		"title": "Moje Projekty",
-		"EduPlatformDescription": "Nowoczesna platforma e-learningowa dla szkół i uczelni, umożliwiająca prowadzenie kursów online, testów oraz śledzenie postępów uczniów.",
+		"EduPlatformDescription": "Nowoczesna platforma e-learningowa dla szkół i uczelni",
 		"EduPlatformFeature1": "Interaktywne testy i quizy",
 		"EduPlatformFeature2": "Panel administracyjny dla nauczycieli",
-		"EduPlatformFeature3": "System powiadomień push",
-		"EduPlatformFeature4": "Responsywny design",
+		"EduPlatformFeature3": "Responsywny design",
 
-		"TrzyCzteRyDescription": "Strona internetowa prezentująca ofertę firmy wynajmującej dmuchańce, ułatwiająca przeglądanie katalogu ofert wraz z ich danymi technicznymi i galerią zdjęć.",
+		"TrzyCzteRyDescription": "Strona internetowa prezentująca ofertę firmy wynajmującej dmuchańce",
 		"TrzyCzteRyFeature1": "Filtrowanie poszczególnych atrakcji ",
 		"TrzyCzteRyFeature2": "Oferty Dmuchańców",
 		"TrzyCzteRyFeature3": "Responsywny Design",
-		"TrzyCzteRyFeature4": "Optymalizacja SEO i szybkości ładowania strony tak, aby zapewnić jak największy komfort użytkownikowi",
 
 		"SparkAmberDescription": "Strona stworzona według własnego projektu aby zaznajomić się z biblioteką Framer Motion",
 		"SparkAmberFeature1": "Animacje z użyciem Framer Motion",
 		"SparkAmberFeature2": "Czysty i schludny styl",
 		"SparkAmberFeature3": "Działająca bramka płatności Stripe",
-		"SparkAmberFeature4": "Recenzja i oceny",
 
-		"TravelioDescription": "Platforma do rezerwacji wycieczek i noclegów z interaktywną mapą oraz opiniami użytkowników.",
-		"TravelioFeature1": "Wyszukiwanie ofert na mapie",
-		"TravelioFeature2": "System recenzji i ocen",
-		"TravelioFeature3": "Powiadomienia o promocjach",
-		"TravelioFeature4": "Integracja z kalendarzem Google",
-
-		"PortfolioDescription": "Moje portfolio stworzone w celu zaprezentowania umiejętności, projektów oraz doświadczenia. Nowoczesny design, animacje i pełna responsywność.",
+		"PortfolioDescription": "Moje portfolio stworzone w celu zaprezentowania umiejętności oraz doświadczenia.",
 		"PortfolioFeature1": "Nowoczesny, responsywny design",
 		"PortfolioFeature2": "Animacje z użyciem Framer Motion",
 		"PortfolioFeature3": "Wielojęzyczność (i18n)",
-		"PortfolioFeature4": "Optymalizacja wydajności i SEO",
 
 		"close": "Zamknij",
 		"live": "Zobacz"
@@ -72,7 +62,7 @@
 
 	"AboutSubPage": {
 		"title": "O mnie",
-		"intro": "Cześć, jestem Szymon – front-endowiec z pasją do kodu, estetyki i... sprawności fizycznej.",
+		"intro": "Cześć, jestem Szymon -> front-endowiec z pasją do kodu, estetyki i... sprawności fizycznej.",
 		"daily": "Na co dzień projektuję i wdrażam nowoczesne strony internetowe – takie, które nie tylko dobrze wyglądają, ale też działają szybko, intuicyjnie i bez kompromisów. Uwielbiam łączyć logikę z kreatywnością – to właśnie ta mieszanka sprawia, że web development wciągnął mnie na dobre.",
 		"lifestyle": "Ale moje życie to nie tylko świat cyfrowy. Od lat jestem strażakiem ochotnikiem – to rola, która wiele mnie nauczyła: odpowiedzialności, działania pod presją, pracy zespołowej. Do tego regularnie trenuję – siłownia to mój drugi dom, bywam tam nawet 5 razy w tygodniu. Dbam o ciało, bo wiem, że forma fizyczna to nie tylko wygląd, ale też energia, dyscyplina i zdrowie – rzeczy, które mocno przekładają się na moje podejście do pracy.",
 		"hobbies": "Po godzinach lubię też montować filmy – czasem dla siebie, czasem dla znajomych z wizją. To moja kreatywna odskocznia od kodu i dobre ćwiczenie dla oka do detalu.",

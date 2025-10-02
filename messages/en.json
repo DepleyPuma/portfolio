@@ -31,35 +31,25 @@
 	},
 	"Projects": {
 		"title": "My Projects",
-		"EduPlatformDescription": "Modern e-learning platform for schools and universities, enabling online courses, tests, and progress tracking.",
+		"EduPlatformDescription": "Modern e-learning platform for schools and universities",
 		"EduPlatformFeature1": "Interactive tests and quizzes",
 		"EduPlatformFeature2": "Admin panel for teachers",
-		"EduPlatformFeature3": "Push notification system",
-		"EduPlatformFeature4": "Responsive design",
+		"EduPlatformFeature3": "Responsive design",
 
-		"TrzyCzteRyDescription": "Website presenting the offer of a company renting inflatables, making it easy to browse the catalog with technical data and photo gallery.",
+		"TrzyCzteRyDescription": "Website presenting the offer of a company renting inflatables",
 		"TrzyCzteRyFeature1": "Filtering individual attractions",
 		"TrzyCzteRyFeature2": "Inflatable offers",
 		"TrzyCzteRyFeature3": "Responsive Design",
-		"TrzyCzteRyFeature4": "SEO and speed optimization for best user experience",
 
 		"SparkAmberDescription": "Site created by custom design to familiarize yourself with Framer Motion",
 		"SparkAmberFeature1": "Framer Motion animation",
 		"SparkAmberFeature2": "Clean and tidy styles",
 		"SparkAmberFeature3": "Working Paypments using Stripe",
-		"SparkAmberFeature4": "Review and rating",
 
-		"TravelioDescription": "Platform for booking trips and accommodations with an interactive map and user reviews.",
-		"TravelioFeature1": "Offer search on the map",
-		"TravelioFeature2": "Review and rating system",
-		"TravelioFeature3": "Promotion notifications",
-		"TravelioFeature4": "Google Calendar integration",
-
-		"PortfolioDescription": "My portfolio created to showcase my skills, projects, and experience. Modern design, animations, and full responsiveness.",
+		"PortfolioDescription": "My portfolio created to showcase my skills and experience",
 		"PortfolioFeature1": "Modern, responsive design",
 		"PortfolioFeature2": "Animations using Framer Motion",
 		"PortfolioFeature3": "Multilingual (i18n)",
-		"PortfolioFeature4": "Performance and SEO optimization",
 
 		"close": "Close",
 		"live": "Live"
@@ -72,7 +62,7 @@
 
 	"AboutSubPage": {
 		"title": "About me",
-		"intro": "Hi, I'm Szymon – a front-end developer with a passion for code, aesthetics, and... physical fitness.",
+		"intro": "Hi, I'm Szymon -> a front-end developer with a passion for code, aesthetics, and... physical fitness.",
 		"daily": "Every day, I design and build modern websites – ones that not only look good but also run fast, intuitively, and without compromise. I love combining logic with creativity – it's that mix that got me hooked on web development.",
 		"lifestyle": "But my life isn’t just digital. I’ve been a volunteer firefighter for years – a role that taught me responsibility, pressure management, and teamwork. On top of that, I train regularly – the gym is like a second home to me, and I go there up to 5 times a week. I care about my body because physical fitness isn’t just about looks – it’s about energy, discipline, and health, all of which influence how I work.",
 		"hobbies": "After hours, I enjoy editing videos – sometimes for myself, sometimes for friends with a vision. It’s my creative break from code and a great exercise in attention to detail.",
