@@ -4,6 +4,7 @@ import { getLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 import { DockDemo } from '@/components/Navigation';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
 	title: 'Szymon Szarek | Tworzenie stron internetowych',
@@ -20,6 +21,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 					<SmoothScrollProvider>{children}</SmoothScrollProvider>
 					<DockDemo />
 				</NextIntlClientProvider>
+				<Analytics />
 			</body>
 		</html>
 	);
