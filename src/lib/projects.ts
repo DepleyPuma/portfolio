@@ -14,12 +14,7 @@ export const projects: ProjectType[] = [
 		image: '/test.webp',
 		url: 'test',
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
-		features: [
-			'EduPlatformFeature1',
-			'EduPlatformFeature2',
-			'EduPlatformFeature3',
-			'EduPlatformFeature4',
-		],
+		features: ['EduPlatformFeature1', 'EduPlatformFeature2', 'EduPlatformFeature3'],
 	},
 	{
 		title: 'Trzy-czte-ry',
@@ -27,12 +22,7 @@ export const projects: ProjectType[] = [
 		image: '/projects/HOME_PAGE.webp',
 		url: 'https://www.trzy-czte-ry.com.pl/',
 		technologies: ['React', 'TailwindCSS', 'Shadcn-UI', 'TypeScript'],
-		features: [
-			'TrzyCzteRyFeature1',
-			'TrzyCzteRyFeature2',
-			'TrzyCzteRyFeature3',
-			'TrzyCzteRyFeature4',
-		],
+		features: ['TrzyCzteRyFeature1', 'TrzyCzteRyFeature2', 'TrzyCzteRyFeature3'],
 	},
 	{
 		title: 'Spark Amber',
@@ -40,12 +30,7 @@ export const projects: ProjectType[] = [
 		image: '/projects/spark_amber.webp',
 		url: 'test',
 		technologies: ['Next.js', 'TailwindCSS', 'Framer Motion', 'Stripe'],
-		features: [
-			'SparkAmberFeature1',
-			'SparkAmberFeature2',
-			'SparkAmberFeature3',
-			'SparkAmberFeature4',
-		],
+		features: ['SparkAmberFeature1', 'SparkAmberFeature2', 'SparkAmberFeature3'],
 	},
 	{
 		title: 'Portfolio',
@@ -53,11 +38,6 @@ export const projects: ProjectType[] = [
 		image: '/projects/portfolio.webp',
 		url: 'https://szymon-szyszka.pl',
 		technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel', 'i18n'],
-		features: [
-			'PortfolioFeature1',
-			'PortfolioFeature2',
-			'PortfolioFeature3',
-			'PortfolioFeature4',
-		],
+		features: ['PortfolioFeature1', 'PortfolioFeature2', 'PortfolioFeature3'],
 	},
 ];
