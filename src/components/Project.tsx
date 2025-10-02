@@ -116,7 +116,7 @@ const SpringModal = ({
 					animate={{ scale: 1, rotate: '0deg' }}
 					exit={{ scale: 0, rotate: '0deg' }}
 					onClick={e => e.stopPropagation()}
-					className='bg-gradient-to-tl from-[#0a0a0a] via-black to-[#4f4f4f] text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden'
+					className='bg-gradient-to-tl from-[#0a0a0a] via-black to-[#4f4f4f] text-white p-6 rounded-lg max-h-[630px] md:max-h-full w-full max-w-lg shadow-xl cursor-default relative overflow-hidden'
 				>
 					<div className='relative z-10'>
 						<Image
@@ -124,7 +124,7 @@ const SpringModal = ({
 							alt={title}
 							width={800}
 							height={300}
-							className='object-cover w-full rounded-lg mb-4 h-[150px] md:h-[250px]'
+							className='object-cover w-full rounded-lg mb-4 h-[120px] md:h-[250px]'
 						/>
 						<h3 className='text-3xl font-bold text-left mb-2'>{title}</h3>
 						<p className='text-left mb-4'>{t(description)}</p>
