@@ -15,7 +15,7 @@ export const workExperience: workExperienceType[] = [
 		image: '/fcb.png',
 	},
 	{
-		name: 'Braughman Group Media Outdoor Sp. z o.o.',
+		name: 'Braughman Group Media',
 		job: 'Digital Archivist',
 		workStart: 'BraughmanworkStart',
 		workEnd: 'BraughmanworkEnd',
