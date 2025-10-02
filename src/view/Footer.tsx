@@ -42,7 +42,7 @@ export function Footer() {
 					<Magnet>
 						<div className='relative w-full md:w-auto h-[200px] md:h-[250px] z-10'>
 							<motion.a
-								href='/contact'
+								href='mailto:szymon.szarek1@wp.pl'
 								whileHover={{ scale: 1.08 }}
 								whileTap={{ scale: 0.95 }}
 								className='rounded-full w-40 h-40 md:w-50 md:h-50 bg-[#ededed] text-black flex items-center justify-center text-lg font-semibold cursor-pointer shadow-lg'
