@@ -153,7 +153,7 @@ export function DockDemo() {
 					className='flex flex-col items-center justify-center fixed bottom-10 left-0 right-0 z-100'
 				>
 					<TooltipProvider>
-						<Dock direction='middle'>
+						<Dock direction='middle' iconSize={isMobile ? 30 : 40}>
 							{DATA.navbar.map(item => (
 								<DockIcon key={item.label}>
 									<Tooltip>
@@ -173,7 +173,6 @@ export function DockDemo() {
 											</Link>
 										</TooltipTrigger>
 										<TooltipContent>
-											{/* <p>{item.label}</p> */}
 											<p>{t(item.label)}</p>
 										</TooltipContent>
 									</Tooltip>
