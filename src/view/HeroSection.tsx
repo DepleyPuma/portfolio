@@ -48,17 +48,16 @@ export function HeroSection() {
 	};
 
 	return (
-		<section className='relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden bg-[var(--website-bg-color)] text-[var(--foreground)] px-4 py-12 md:py-0 font-sans'>
+		<section className='relative w-full min-h-[60svh] lg:min-h-screen flex flex-col justify-center items-center overflow-hidden bg-[var(--website-bg-color)] text-[var(--foreground)] px-4 py-12 md:py-0 font-sans'>
 			<div className='max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-0'>
 				{/* Left Column: Text */}
-				<div className='flex-1 flex flex-col items-start justify-center z-10'>
+				<div className='flex-1 flex flex-col items-start justify-center z-10 before:absolute before:inset-0 before:bg-[var(--website-bg-color)] before:opacity-50 before:-z-10'>
 					<AnimatedText
 						splitBy='words'
 						duration={1}
 						delay={0.5}
 						as='h1'
-						className='text-4xl lg:text-5xl font-extrabold italic mb-2 text-white'
-					>
+						className='text-4xl lg:text-5xl font-extrabold italic mb-2 text-white'>
 						{t('title')}
 					</AnimatedText>
 					<AnimatedText
@@ -66,8 +65,7 @@ export function HeroSection() {
 						duration={1}
 						delay={1}
 						as='h2'
-						className='text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-[#D9D9D9]'
-					>
+						className='text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-[#D9D9D9]'>
 						{t('subtitle')}
 					</AnimatedText>
 					<AnimatedText
@@ -75,16 +73,10 @@ export function HeroSection() {
 						duration={1}
 						delay={1.3}
 						as='p'
-						className='mb-8 max-w-lg text-base md:text-lg text-[#ededed]'
-					>
+						className='mb-8 max-w-lg text-base md:text-lg text-[#ededed]'>
 						{t('description')}
 					</AnimatedText>
-					<Magnet
-						padding={100}
-						disabled={false}
-						magnetStrength={4}
-						className='cursor-pointer'
-					>
+					<Magnet padding={100} disabled={false} magnetStrength={4} className='cursor-pointer'>
 						<motion.div
 							initial={{ opacity: 0, scale: 0.1 }}
 							whileInView={{ opacity: 1, scale: [0.1, 1] }}
@@ -95,14 +87,12 @@ export function HeroSection() {
 									playedOnce.current = true;
 									setDelay(0);
 								}
-							}}
-						>
+							}}>
 							<ShimmerButton
 								shimmerColor='#5c5c5c'
 								background='var(--btn-bg-color)'
 								onClick={handleScrollToContact}
-								className='inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold text-black bg-[var(--btn-bg-color)] shadow-md hover:scale-110 hover:shadow-lg transition-transform duration-200 cursor-pointer'
-							>
+								className='inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold text-black bg-[var(--btn-bg-color)] shadow-md hover:scale-110 hover:shadow-lg transition-transform duration-200 cursor-pointer'>
 								{t('contactButton')}
 								<SquareArrowOutUpRight size={20} />
 							</ShimmerButton>
@@ -113,8 +103,7 @@ export function HeroSection() {
 				<motion.div
 					initial={{ opacity: 0, scale: 1 }}
 					animate={controls}
-					className='flex-1 flex items-center justify-center relative w-full md:w-auto h-[400px] md:h-[500px] z-10'
-				>
+					className='flex-1 flex items-center justify-center relative w-full md:w-auto h-[400px] md:h-[500px] z-10'>
 					<Image
 						src='/szsz.webp'
 						alt='Szymon Photo'
@@ -130,8 +119,7 @@ export function HeroSection() {
 				initial={{ opacity: 0, scale: 1 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-				className='absolute top-[75%] left-1/2 md:left-[68%] -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] h-[400px] md:max-w-[600px] md:h-[600px] xl:max-w-[800px] md:top-[45%] xl:h-[800px] overflow-hidden'
-			>
+				className='absolute top-[75%] left-1/2 md:left-[68%] -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] h-[400px] md:max-w-[600px] md:h-[600px] xl:max-w-[800px] md:top-[45%] xl:h-[800px] overflow-hidden'>
 				<DotGrid
 					dotSize={5}
 					gap={15}
