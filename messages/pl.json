@@ -31,22 +31,22 @@
 	},
 	"Projects": {
 		"title": "Moje Projekty",
-		"EduPlatformDescription": "Nowoczesna platforma e-learningowa dla szkół i uczelni",
-		"EduPlatformFeature1": "Interaktywne testy i quizy",
-		"EduPlatformFeature2": "Panel administracyjny dla nauczycieli",
-		"EduPlatformFeature3": "Responsywny design",
+		"NoteAppDescription": "Aplikacja mobilna do tworzenia notatek oraz zarządzania nimi",
+		"NoteAppFeature1": "Dodawanie notatek przez formularz",
+		"NoteAppFeature2": "Filtrowanie aktywnych notatek",
+		"NoteAppFeature3": "Edytowanie każdej poszczególnej notatki",
 
 		"TrzyCzteRyDescription": "Strona internetowa prezentująca ofertę firmy wynajmującej dmuchańce",
 		"TrzyCzteRyFeature1": "Filtrowanie poszczególnych atrakcji ",
 		"TrzyCzteRyFeature2": "Oferty Dmuchańców",
 		"TrzyCzteRyFeature3": "Responsywny Design",
 
-		"SparkAmberDescription": "Strona stworzona według własnego projektu aby zaznajomić się z biblioteką Framer Motion",
+		"SparkAmberDescription": "Strona stworzona aby zaznajomić się z biblioteką Framer Motion oraz płatnościami serwisu Stripe",
 		"SparkAmberFeature1": "Animacje z użyciem Framer Motion",
 		"SparkAmberFeature2": "Czysty i schludny styl",
 		"SparkAmberFeature3": "Działająca bramka płatności Stripe",
 
-		"PortfolioDescription": "Moje portfolio stworzone w celu zaprezentowania umiejętności oraz doświadczenia.",
+		"PortfolioDescription": "Moje portfolio stworzone w celu zaprezentowania umiejętności oraz doświadczenia, które posiadam.",
 		"PortfolioFeature1": "Nowoczesny, responsywny design",
 		"PortfolioFeature2": "Animacje z użyciem Framer Motion",
 		"PortfolioFeature3": "Wielojęzyczność (i18n)",

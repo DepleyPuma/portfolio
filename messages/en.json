@@ -31,17 +31,17 @@
 	},
 	"Projects": {
 		"title": "My Projects",
-		"EduPlatformDescription": "Modern e-learning platform for schools and universities",
-		"EduPlatformFeature1": "Interactive tests and quizzes",
-		"EduPlatformFeature2": "Admin panel for teachers",
-		"EduPlatformFeature3": "Responsive design",
+		"NoteAppDescription": "Mobile application for creating and managing notes",
+		"NoteAppFeature1": "Adding notes through a form",
+		"NoteAppFeature2": "Filtering active notes",
+		"NoteAppFeature3": "Editing each individual note",
 
 		"TrzyCzteRyDescription": "Website presenting the offer of a company renting inflatables",
 		"TrzyCzteRyFeature1": "Filtering individual attractions",
 		"TrzyCzteRyFeature2": "Inflatable offers",
 		"TrzyCzteRyFeature3": "Responsive Design",
 
-		"SparkAmberDescription": "Site created by custom design to familiarize yourself with Framer Motion",
+		"SparkAmberDescription": "Site created to familiarize yourself with Framer Motion and payments method with Stripe",
 		"SparkAmberFeature1": "Framer Motion animation",
 		"SparkAmberFeature2": "Clean and tidy styles",
 		"SparkAmberFeature3": "Working Paypments using Stripe",
