@@ -9,12 +9,12 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
 	{
-		title: 'EduPlatform',
-		description: 'EduPlatformDescription',
-		image: '/test.webp',
-		url: 'test',
-		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
-		features: ['EduPlatformFeature1', 'EduPlatformFeature2', 'EduPlatformFeature3'],
+		title: 'NoteApp',
+		description: 'NoteAppDescription',
+		image: '/projects/noteApp.webp',
+		url: 'https://github.com/DepleyPuma/expoApp',
+		technologies: ['Expo', 'Expo Router', 'TypeScript', 'MongoDB'],
+		features: ['NoteAppFeature1', 'NoteAppFeature2', 'NoteAppFeature3'],
 	},
 	{
 		title: 'Trzy-czte-ry',
@@ -36,7 +36,7 @@ export const projects: ProjectType[] = [
 		title: 'Portfolio',
 		description: 'PortfolioDescription',
 		image: '/projects/portfolio.webp',
-		url: 'https://szymon-szyszka.pl',
+		url: 'https://szymonszarek.dev',
 		technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel', 'i18n'],
 		features: ['PortfolioFeature1', 'PortfolioFeature2', 'PortfolioFeature3'],
 	},
