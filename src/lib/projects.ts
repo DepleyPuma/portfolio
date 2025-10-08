@@ -11,7 +11,7 @@ export const projects: ProjectType[] = [
 	{
 		title: 'NoteApp',
 		description: 'NoteAppDescription',
-		image: '/projects/noteApp.webp',
+		image: '/projects/NoteApp.webp',
 		url: 'https://github.com/DepleyPuma/expoApp',
 		technologies: ['Expo', 'Expo Router', 'TypeScript', 'MongoDB'],
 		features: ['NoteAppFeature1', 'NoteAppFeature2', 'NoteAppFeature3'],
