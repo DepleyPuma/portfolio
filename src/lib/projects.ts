@@ -28,7 +28,7 @@ export const projects: ProjectType[] = [
 		title: 'Spark Amber',
 		description: 'SparkAmberDescription',
 		image: '/projects/spark_amber.webp',
-		url: 'test',
+		url: 'https://github.com/DepleyPuma/spark-amber-copy',
 		technologies: ['Next.js', 'TailwindCSS', 'Framer Motion', 'Stripe'],
 		features: ['SparkAmberFeature1', 'SparkAmberFeature2', 'SparkAmberFeature3'],
 	},
