@@ -64,8 +64,8 @@
 		"title": "O mnie",
 		"intro": "Cześć, jestem Szymon -> front-endowiec z pasją do kodu, estetyki i... sprawności fizycznej.",
 		"daily": "Na co dzień projektuję i wdrażam nowoczesne strony internetowe – takie, które nie tylko dobrze wyglądają, ale też działają szybko, intuicyjnie i bez kompromisów. Uwielbiam łączyć logikę z kreatywnością – to właśnie ta mieszanka sprawia, że web development wciągnął mnie na dobre.",
-		"lifestyle": "Ale moje życie to nie tylko świat cyfrowy. Od lat jestem strażakiem ochotnikiem – to rola, która wiele mnie nauczyła: odpowiedzialności, działania pod presją, pracy zespołowej. Do tego regularnie trenuję – siłownia to mój drugi dom, bywam tam nawet 5 razy w tygodniu. Dbam o ciało, bo wiem, że forma fizyczna to nie tylko wygląd, ale też energia, dyscyplina i zdrowie – rzeczy, które mocno przekładają się na moje podejście do pracy.",
-		"hobbies": "Po godzinach lubię też montować filmy – czasem dla siebie, czasem dla znajomych z wizją. To moja kreatywna odskocznia od kodu i dobre ćwiczenie dla oka do detalu.",
+		"lifestyle": "Ale moje życie to nie tylko świat cyfrowy. Aktualnie jestem uczniem 5 klasy maturalnej i przygotowuje się do zdania matur, żeby potem pójść na studia związane z tym co chcę robić w przyszłości. Od 5 lat jestem strażakiem ochotnikiem – to rola, która wiele mnie nauczyła: odpowiedzialności, działania pod presją, pracy zespołowej. Do tego regularnie trenuję – siłownia to mój drugi dom, bywam tam nawet 5 razy w tygodniu. Dbam o ciało, bo wiem, że forma fizyczna to nie tylko wygląd, ale też energia, dyscyplina i zdrowie – rzeczy, które mocno przekładają się na moje podejście do pracy.",
+		"hobbies": "Po godzinach lubię też montować filmy – czasem dla siebie, czasem dla znajomych. To moja kreatywna odskocznia od kodu i dobre ćwiczenie dla oka do detalu.",
 		"approach": "W pracy stawiam na jakość, realistyczne podejście i partnerską współpracę. Nie obiecuję gruszek na wierzbie – zamiast tego proponuję solidne rozwiązania, jasną komunikację i zaangażowanie od początku do końca.",
 		"closing": "Jeśli szukasz kogoś, kto nie tylko ogarnia front-end, ale też ma poukładane priorytety i wie, co znaczy „dowieźć temat” – napisz śmiało."
 	},
@@ -83,5 +83,11 @@
 			"title": "Kompleksowa realizacja",
 			"description": "Od pierwszego pomysłu po finalne wdrożenie – zapewniam pełne wsparcie na każdym etapie tworzenia strony internetowej lub aplikacji."
 		}
+	},
+
+	"404Page": {
+		"title": "Strona nie znaleziona",
+		"subtitle": "Widzę, że się zgubiłeś. Chodź pomogę ci wrócić na stronę główną",
+		"btnText": "Wróć na stronę główną"
 	}
 }
