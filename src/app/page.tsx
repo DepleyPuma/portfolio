@@ -7,7 +7,7 @@ import { WorkExperience } from '@/view/WorkExperience';
 
 export default function Home() {
 	return (
-		<div className='relative overflow-hidden'>
+		<div className='relative'>
 			<HeroSection />
 			<About />
 			<WorkExperience />
