@@ -3,11 +3,13 @@ import { AnimatedText } from '@/components/animated/AnimatedText/AnimatedText';
 import { Step } from '@/components/Step';
 import { stepsArr } from '@/lib/steps';
 import { motion, useInView, Variants } from 'motion/react';
+import { useTranslations } from 'next-intl';
 import { useRef } from 'react';
 
 export function ICanHelpYou() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true, margin: '-100px 0px' });
+	const t = useTranslations('services');
 
 	const variants = {
 		hidden: { opacity: 0, y: 20 },
@@ -35,9 +37,8 @@ export function ICanHelpYou() {
 					duration={1}
 					delay={0.5}
 					as='h2'
-					className='text-4xl xl:text-5xl font-extrabold italic mb-16 text-white'
-				>
-					I can help you with
+					className='text-4xl xl:text-5xl font-extrabold italic mb-16 text-white'>
+					{t('title')}
 				</AnimatedText>
 				<motion.div
 					ref={ref}
@@ -49,26 +50,15 @@ export function ICanHelpYou() {
 						ease: 'easeInOut',
 						delay: 0.6,
 					}}
-					className='hidden md:block'
-				>
+					className='hidden md:block'>
 					<motion.div
 						initial='hidden'
 						animate='jump'
 						transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
-						className='flex justify-center items-center gap-1'
-					>
-						<motion.div
-							className='w-2.5 h-2.5 rounded-full bg-white'
-							variants={dotVariants}
-						/>
-						<motion.div
-							className='w-2.5 h-2.5 rounded-full bg-white'
-							variants={dotVariants}
-						/>
-						<motion.div
-							className='w-2.5 h-2.5 rounded-full bg-white'
-							variants={dotVariants}
-						/>
+						className='flex justify-center items-center gap-1'>
+						<motion.div className='w-2.5 h-2.5 rounded-full bg-white' variants={dotVariants} />
+						<motion.div className='w-2.5 h-2.5 rounded-full bg-white' variants={dotVariants} />
+						<motion.div className='w-2.5 h-2.5 rounded-full bg-white' variants={dotVariants} />
 					</motion.div>
 				</motion.div>
 			</div>

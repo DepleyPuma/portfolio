@@ -71,6 +71,7 @@
 	},
 
 	"services": {
+		"title": "I can help you with",
 		"design": {
 			"title": "Design",
 			"description": "I design intuitive and visually appealing interfaces that attract attention and are enjoyable to use. I focus on consistency and usability."
